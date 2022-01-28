@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="stylesheet" href="stylo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+  <title>Calculator app</title>
+
+  
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+      <div class="calc"> 
+        <div class="head">
+            <h2>calc</h2>
+            <!-- <h2> yo</h2> -->
+            <!-- <div class="tw-toggle">
+              <input type="radio" name="toggle" value="false">
+              <label class="toggle toggle-yes"><i class="fa fa-times"></i></label>
+              <input checked type="radio" name="toggle" value="-1">
+              <label class="toggle toggle-yes"><i class="fa fa-minus"></i></label>
+              <input type="radio" name="toggle" value="true">
+              <label class="toggle toggle-yes"><i class="fa fa-check"></i></label>
+              <span></span>  
+            </div> -->
+        </div>
+
+        <div class="ans">
+          <form name="form1">
+            <input type="text" value="" class="text1 display-box" id="result" >
+          </form>
+        </div>
+        <div class="inter">
+          <div class="level">
+          <div class="l1">
+            <!-- <button class="b">
+              7
+            </button> -->
+            <input type="button" value="7" class="b a1" onclick="display('7')">
+            <input type="button" value="8" class="b a2" onclick="display('8')">
+            <input type="button" value="9" class="b a3" onclick="display('9')">
+            <input type="button" value="DEL" class="d a4" onclick="del()">
+            
+          </div>
+          <div class="l2">
+            <input type="button" value="4" class="b a1" onclick="display('4')">
+            <input type="button" value="5" class="b a2" onclick="display('5')">
+            <input type="button" value="6" class="b a3" onclick="display('6')">
+            <input type="button" value="+" class="b a4" onclick="display('+')">
+          </div>
+          <div class="l3">
+            <input type="button" value="1" class="b a1" onclick="display('1')">
+            <input type="button" value="2" class="b a2" onclick="display('2')">
+            <input type="button" value="3" class="b a3" onclick="display('3')">
+            <input type="button" value="-" class="b a4" onclick="display('-')">
+          </div>
+          <div class="l4">
+            <input type="button" value="." class="b a1" onclick="display('.')">
+            <input type="button" value="0" class="b a2" onclick="display('0')">
+            <input type="button" value="/" class="b a3" onclick="display('/')">
+            <input type="button" value="*" class="b a4" onclick="display('*')">
+          </div>
+          <div class="l5">
+            
+            <input type="button" value="RESET" class="reset" onclick="clrscr()">
+            <input type="button" value="=" class="equal" onclick="sjow()">
+
+          </div>
+        </div>
+        </div>
+      </div>
+  
+  
+ 
+</main>
+<script src="https://cdn.jsdelivr.net/npm/nerdamer@latest/nerdamer.core.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/nerdamer@latest/Algebra.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/nerdamer@latest/Calculus.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/nerdamer@latest/Solve.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
